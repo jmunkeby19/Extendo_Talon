@@ -5,6 +5,6 @@ speed = 3000
 
 def calibrate():
   RPL.pinMode(0, RPL.PWM)
-  RPL.pwmWrite(0, speed * 2, speed)
+  RPL.pwmWrite(0, speed, speed * 2)
 
 calibrate()
