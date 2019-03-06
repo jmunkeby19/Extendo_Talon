@@ -6,21 +6,6 @@ screen = curses.initscr()
 curses.halfdelay(5)
 curses.noecho()
 
-key = ''
-
-while key != ord('q'):
-  key = screen.getch()
-  screen.clear()
-  screen.addstr('Hit q to quit, and a, s, or d to run extendo.')
-  if key == ord('q'):
-    curses.endwin()
-  if key == ord('a'):
-    extend()
-  if key == ord('s'):
-    retract()
-  if key == ord('d'):
-    stop()
-
 speed1 = 500
 speed2 = 2000
 speed3 = 0
@@ -36,3 +21,18 @@ def retract():
 def stop():
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed3, speed3 * 2)
+  
+key = ''
+
+while key != ord('q'):
+  key = screen.getch()
+  screen.clear()
+  screen.addstr('Hit q to quit, and a, s, or d to run extendo.')
+  if key == ord('q'):
+    curses.endwin()
+  if key == ord('a'):
+    extend()
+  if key == ord('s'):
+    retract()
+  if key == ord('d'):
+    stop()
