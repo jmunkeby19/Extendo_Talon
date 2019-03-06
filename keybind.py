@@ -16,4 +16,3 @@ def retract():
 def stop():
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed.3, speed.3 * 2)
-
