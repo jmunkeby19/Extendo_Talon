@@ -1,6 +1,5 @@
 import Voss_RoboPiLib as RPL
 import curses
-import time
 RPL.RoboPiInit(device = "/dev/ttyAMA0", bps = 115200)
 
 screen = curses.initscr()
@@ -22,12 +21,6 @@ def retract():
 def stop():
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed3, speed3 * 2)
-  
-def extend10()
-  RPL.pinMode(0, RPL.PWM)
-  RPL.pwmWrite(0, speed1, speed1 * 2)
-  time.sleep(4.73)
-  p.terminate  
   
 key = ''
 
