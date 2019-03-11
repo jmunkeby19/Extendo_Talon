@@ -8,7 +8,7 @@ curses.halfdelay(5)
 curses.noecho()
 
 t1 = (2)
-t2 = (9.94)
+t2 = (13.54)
 speed1 = 500
 speed2 = 2000
 speed3 = 0
