@@ -29,7 +29,14 @@ def stop():
 def extend2()
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed1, speed1 * 2)
-  time.sleep(t)
+  time.sleep(t1)
+  RPL.pinMode(0, RPL.PWM)
+  RPL.pwmWrite(0, speed3, speed3 * 2
+               
+def extend3()
+  RPL.pinMode(0, RPL.PWM)
+  RPL.pwmWrite(0, speed1, speed1 * 2)
+  time.sleep(t2)
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed3, speed3 * 2
   
@@ -47,3 +54,7 @@ while key != ord('q'):
     retract()
   if key == ord('d'):
     stop()
+  if key == ord('f')
+    extend2()
+  if key == ord('g')
+    extend3()
