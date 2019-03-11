@@ -30,7 +30,7 @@ def extend2()
   RPL.pwmWrite(0, speed1, speed1 * 2)
   time.sleep(t1)
   RPL.pinMode(0, RPL.PWM)
-  RPL.pwmWrite(0, speed3, speed3 * 2
+  RPL.pwmWrite(0, speed3, speed3 * 2)
         
 def extend3()
   RPL.pinMode(0, RPL.PWM)
