@@ -53,7 +53,7 @@ while key != ord('q'):
     retract()
   if key == ord('d'):
     stop()
-  if key == ord('f')
+  if key == ord('f'):
     extend2()
-  if key == ord('g')
+  if key == ord('g'):
     extend3()
