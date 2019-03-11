@@ -9,7 +9,6 @@ curses.noecho()
 
 t1 = (2)
 t2 = (2.5)
-t3 = (3)
 speed1 = 500
 speed2 = 2000
 speed3 = 0
