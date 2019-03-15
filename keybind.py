@@ -7,7 +7,7 @@ screen = curses.initscr()
 curses.halfdelay(5)
 curses.noecho()
 
-t1 = ()
+t1 = (4.62325)
 t2 = ()
 t3 = ()
 t4 = ()
@@ -61,7 +61,6 @@ while key != ord('q'):
   key = screen.getch()
   screen.clear()
   screen.addstr('q - quit | a - extend | s - retract | d - stop')
-  screen.addstr('blank space')
   if key == ord('q'):
     curses.endwin()
   if key == ord('a'):
@@ -70,7 +69,7 @@ while key != ord('q'):
     retract()
   if key == ord('d'):
     stop()
-  if key == ord('f'):
-    extend2()
-  if key == ord('g'):
-    extend3()
+  if key == ord('z'):
+    extend10()
+  if key == ord('x'):
+    extend1()
