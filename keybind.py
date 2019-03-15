@@ -7,8 +7,10 @@ screen = curses.initscr()
 curses.halfdelay(5)
 curses.noecho()
 
-t1 = (4.64)
-t2 = (9.28)
+t1 = ()
+t2 = ()
+t3 = ()
+t4 = ()
 speed1 = 500
 speed2 = 2000
 speed3 = 0
@@ -25,17 +27,31 @@ def stop():
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed3, speed3 * 2)
 
-def extend2():
+def extend10():
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed1, speed1 * 2)
   time.sleep(t1)
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed3, speed3 * 2)
         
-def extend3():
+def extend1():
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed1, speed1 * 2)
   time.sleep(t2)
+  RPL.pinMode(0, RPL.PWM)
+  RPL.pwmWrite(0, speed3, speed3 * 2)
+  
+def extend0.5():
+  RPL.pinMode(0, RPL.PWM)
+  RPL.pwmWrite(0, speed1, speed1 * 2)
+  time.sleep(t3)
+  RPL.pinMode(0, RPL.PWM)
+  RPL.pwmWrite(0, speed3, speed3 * 2)
+  
+def extend0.25():
+  RPL.pinMode(0, RPL.PWM)
+  RPL.pwmWrite(0, speed1, speed1 * 2)
+  time.sleep(t4)
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed3, speed3 * 2)
   
