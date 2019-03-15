@@ -44,7 +44,8 @@ key = ''
 while key != ord('q'):
   key = screen.getch()
   screen.clear()
-  screen.addstr('Hit q to quit, and a, s, or d to run extendo.')
+  screen.addstr('Hit q to quit 
+                and a, s, or d to run extendo.')
   if key == ord('q'):
     curses.endwin()
   if key == ord('a'):
