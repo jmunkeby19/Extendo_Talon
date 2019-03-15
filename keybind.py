@@ -41,14 +41,14 @@ def extend1():
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed3, speed3 * 2)
   
-def extend0.5():
+def extend_halfin():
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed1, speed1 * 2)
   time.sleep(t3)
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed3, speed3 * 2)
   
-def extend0.25():
+def extend_quarterin():
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed1, speed1 * 2)
   time.sleep(t4)
