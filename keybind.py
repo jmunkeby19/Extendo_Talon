@@ -7,10 +7,10 @@ screen = curses.initscr()
 curses.halfdelay(5)
 curses.noecho()
 
-t1 = (4.62325)
-t2 = ()
-t3 = ()
-t4 = ()
+t1 = 4.62325
+t2 = 0
+t3 = 0
+t4 = 0
 speed1 = 500
 speed2 = 2000
 speed3 = 0
