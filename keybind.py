@@ -45,7 +45,7 @@ while key != ord('q'):
   key = screen.getch()
   screen.clear()
   screen.addstr('q - quit | a - extend | s - retract | d - stop')
-  screen.addstr('blank line')
+  screen.addstr('blank line _____________ _____________ _______________ ____________')
   if key == ord('q'):
     curses.endwin()
   if key == ord('a'):
