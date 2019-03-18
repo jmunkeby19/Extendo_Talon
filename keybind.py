@@ -27,14 +27,14 @@ def stop():
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed3, speed3 * 2)
 
-def extend10():
+def extend_tenin():
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed1, speed1 * 2)
   time.sleep(t1)
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed3, speed3 * 2)
         
-def extend1():
+def extend_onein():
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed1, speed1 * 2)
   time.sleep(t2)
@@ -48,7 +48,7 @@ def extend_halfin():
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed3, speed3 * 2)
   
-def extend_quarterin():
+def extend_fourthin():
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed1, speed1 * 2)
   time.sleep(t4)
@@ -60,7 +60,7 @@ key = ''
 while key != ord('q'):
   key = screen.getch()
   screen.clear()
-  screen.addstr('q - quit | a - extend | s - retract | d - stop')
+  screen.addstr('q - quit | a - extend | s - retract | d - stop | z - extend 10in | x - extend 1in | c - extend 0.5in | v - extend 0.25in')
   if key == ord('q'):
     curses.endwin()
   if key == ord('a'):
@@ -70,6 +70,10 @@ while key != ord('q'):
   if key == ord('d'):
     stop()
   if key == ord('z'):
-    extend10()
+    extend_tenin()
   if key == ord('x'):
-    extend1()
+    extend_onein()
+  if key == ord('c'):
+    extend_halfin()
+  if key == ord('v'):
+    extend_fourthin()
