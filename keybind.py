@@ -34,14 +34,14 @@ def extend_tenin():
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed3, speed3 * 2)
         
-def extend_onein():
+def extend_fivein():
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed1, speed1 * 2)
   time.sleep(t2)
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed3, speed3 * 2)
   
-def extend_halfin():
+def extend_onein():
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed1, speed1 * 2)
   time.sleep(t3)
@@ -72,8 +72,8 @@ while key != ord('q'):
   if key == ord('z'):
     extend_tenin()
   if key == ord('x'):
-    extend_onein()
+    extend_fivein()
   if key == ord('c'):
-    extend_halfin()
+    extend_onein()
   if key == ord('v'):
     extend_fourthin()
