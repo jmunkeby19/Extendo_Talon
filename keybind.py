@@ -72,7 +72,7 @@ key = ''
 while key != ord('q'):
   key = screen.getch()
   screen.clear()
-  screen.addstr('q - quit | a - extend | s - retract | d - stop | z - extend 10in | x - extend 1in | c - extend 0.5in | v - extend 0.25in')
+  screen.addstr('q - quit | a - extend | s - retract | d - stop | z - extend 10in | x - extend 1in | c - extend 0.5in | v - extend 0.25in | b - retract 0.7535in')
   if key == ord('q'):
     curses.endwin()
   if key == ord('a'):
@@ -89,3 +89,5 @@ while key != ord('q'):
     extend_onein()
   if key == ord('v'):
     extend_fourthin()
+  if key == ord('b'):
+    retract_extra()
