@@ -7,10 +7,15 @@ screen = curses.initscr()
 curses.halfdelay(5)
 curses.noecho()
 
-t1 = 4.62325
-t2 = 0.462325
-t3 = 0.231625
-t4 = 0.115581
+t1 = 5.0
+t2 = 2.5
+t3 = 0.5
+t4 = 0.125
+t5 = 0.37675
+#t1 = 4.62325
+#t2 = 0.462325
+#t3 = 0.231625
+#t4 = 0.115581
 speed1 = 500
 speed2 = 2000
 speed3 = 0
@@ -52,6 +57,13 @@ def extend_fourthin():
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed1, speed1 * 2)
   time.sleep(t4)
+  RPL.pinMode(0, RPL.PWM)
+  RPL.pwmWrite(0, speed3, speed3 * 2)
+  
+def retract_extra():
+  RPL.pinMode(0, RPL.PWM)
+  RPL.pwmWrite(0, speed2, speed2 * 2)
+  time.sleep(t5)
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed3, speed3 * 2)
   
