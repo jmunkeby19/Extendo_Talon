@@ -15,11 +15,11 @@ curses.noecho()
 #t5 = 0.35
 
 #2.1 inches/second times
-#t1 = 4.762
-#t2 = 2.381
-#t3 = 0.476
-#t4 = 0.060
-#t5 = 0.359
+t1 = 4.762
+t2 = 2.381
+t3 = 0.476
+t4 = 0.060
+t5 = 0.359
 
 #2.2 inches/second times
 #t1 = 4.5454
@@ -29,11 +29,11 @@ curses.noecho()
 #t5 = 0.3425
 
 #2.3 inches/second times
-t1 = 4.348
-t2 = 2.174
-t3 = 0.435
-t4 = 0.109
-t5 = 0.328
+#t1 = 4.348
+#t2 = 2.174
+#t3 = 0.435
+#t4 = 0.109
+#t5 = 0.328
 
 #Original times for 2.0584 inches/second
 #t1 = 4.62325
