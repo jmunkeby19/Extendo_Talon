@@ -24,7 +24,7 @@ curses.noecho()
 #2.15 inches/second times
 t1 = 4.651
 t2 = 2.326
-t3 = 0.48
+t3 = 0.5
 t4 = 0.116
 t5 = 0.2
 
