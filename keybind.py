@@ -8,11 +8,11 @@ curses.halfdelay(5)
 curses.noecho()
 
 #2.0 inches/second times
-t1 = 5.0
-t2 = 2.5
-t3 = 0.5
-t4 = 0.125
-t5 = 0.35
+#t1 = 5.0
+#t2 = 2.5
+#t3 = 0.5
+#t4 = 0.125
+#t5 = 0.35
 
 #2.1 inches/second times
 #t1 = 4.762
@@ -22,11 +22,11 @@ t5 = 0.35
 #t5 = 0.359
 
 #2.2 inches/second times
-#t1 = 4.5454
-#t2 = 2.2727
-#t3 = 0.4545
-#t4 = 0.1136
-#t5 = 0.3425
+t1 = 4.5454
+t2 = 2.2727
+t3 = 0.4545
+t4 = 0.1136
+t5 = 0.3425
 
 #2.3 inches/second times
 #t1 = 4.348
