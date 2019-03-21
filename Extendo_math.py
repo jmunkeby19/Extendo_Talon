@@ -15,4 +15,5 @@ def movement():
 while True:
   distance = input('- ')
   movement()
+  print(tm)
   continue
