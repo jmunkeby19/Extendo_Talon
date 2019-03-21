@@ -8,7 +8,7 @@ def movement():
     speed = 500
   else:
     speed = 2000
-  print(tm)
+  print(round(tm, 5))
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed, speed * 2)
   sleep(abs(tm))
