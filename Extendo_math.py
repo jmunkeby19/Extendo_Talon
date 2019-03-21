@@ -7,7 +7,7 @@ def movement():
   tm = rate / distance
   if distance > 0:
     RPL.pinMode(0, RPL.PWM)
-  else distance < 0:
+  else:
     RPL.pinMode(1, RPL.PWM)
   RPL.pwmWrite(0, speed, speed * 2)
   sleep(tm)
