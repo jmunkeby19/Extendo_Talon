@@ -12,7 +12,7 @@ def movement():
   print(tm)
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed, speed * 2)
-  sleep(abs(tm))
+  sleep(abs(tm * 10 / 11))
   RPL.pwmWrite(0, 0, 1)
 while True:
   distance = input('- ')
