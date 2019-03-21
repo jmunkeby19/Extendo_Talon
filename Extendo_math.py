@@ -4,7 +4,7 @@ RPL.RoboPiInit(device = "/dev/ttyAMA0", bps = 115200)
 rate = 2
 speed = 500
 def movement():
-  tm = rate / distance
+  tm = abs(rate / distance)
   if distance > 0:
     RPL.pinMode(0, RPL.PWM)
   else:
