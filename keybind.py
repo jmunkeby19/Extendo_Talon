@@ -37,7 +37,8 @@ t1 = 4.5       #4.5454
 t2 = 2.17
 t3 = 0.335
 t4 = 0.1
-t5 = 0.3
+t5 = 0.04
+t6 = 0.3
 
 #2.3 inches/second times
 #t1 = 4.348
@@ -90,17 +91,24 @@ def extend_onein():
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed3, speed3 * 2)
   
-def extend_fourthin():
+def extend_halfin():
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed1, speed1 * 2)
   time.sleep(t4)
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed3, speed3 * 2)
   
+def extend_quarterin():
+  RPL.pinMode(0, RPL.PWM)
+  RPL.pwmWrite(0, speed1, speed1 * 2)
+  time.sleep(t5)
+  RPL.pinMode(0, RPL.PWM)
+  RPL.pwmWrite(0, speed3, speed3 * 2)
+  
 def retract_extra():
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed2, speed2 * 2)
-  time.sleep(t5)
+  time.sleep(t6)
   RPL.pinMode(0, RPL.PWM)
   RPL.pwmWrite(0, speed3, speed3 * 2)
   
@@ -125,6 +133,8 @@ while key != ord('q'):
   if key == ord('c'):
     extend_onein()
   if key == ord('v'):
-    extend_fourthin()
+    extend_halfin()
   if key == ord('b'):
+    extend_quarterin()
+  if key == ord('n'):
     retract_extra()
