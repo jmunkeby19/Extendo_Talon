@@ -35,7 +35,7 @@ curses.noecho()
 #2.2 inches/second times
 t1 = 4.5       #4.5454
 t2 = 2.17
-t3 = 0.4545
+t3 = 0.43
 t4 = 0.1136
 t5 = 0.3
 
@@ -109,7 +109,7 @@ key = ''
 while key != ord('q'):
   key = screen.getch()
   screen.clear()
-  screen.addstr('q - quit | a - extend | s - retract | d - stop | z - extend 10in | x - extend 1in | c - extend 0.5in | v - extend 0.25in | b - retract 0.7535in')
+  screen.addstr('q - quit | a - extend | s - retract | d - stop | z - extend 10in | x - extend 5in | c - extend 1in | v - extend 0.25in | b - retract 0.7535in')
   if key == ord('q'):
     curses.endwin()
   if key == ord('a'):
