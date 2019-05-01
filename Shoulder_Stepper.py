@@ -1,5 +1,4 @@
 import RoboPiLib as RPL
-import RoboPiLib_pwm as RPL
 import time as time
 import math
 RPL.RoboPiInit("/dev/ttyAMA0",115200)
