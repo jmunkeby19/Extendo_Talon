@@ -1,7 +1,7 @@
 import RoboPiLib_pwm as RPL
 import time as time
 import math
-RPL.RoboPiInit("/dev/ttyAMA0",115200)
+import setup
 
 shoulder_pul = 6
 shoulder_dir = 7
