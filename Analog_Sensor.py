@@ -2,8 +2,7 @@ import RoboPiLib as RPL
 import setup
 
 sensor_pin = 1
-sense = RPL.analogRead(sensor_pin)
-print sense
+print RPL.analogRead(1)
 
 #RoboPi.pinMode(17,RoboPi.PWM)
 #RoboPi.analogWrite(17,127) 
