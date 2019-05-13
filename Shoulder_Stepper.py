@@ -93,6 +93,9 @@ def ui():
     print "Not a command"
   ui()  
 
+while True:
+  ui()
+  
 # ui()
 # python
 # import stepper_control as st
