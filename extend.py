@@ -1,5 +1,6 @@
 import Voss_RoboPiLib as RPL
-RPL.RoboPiInit(device = "/dev/ttyAMA0", bps = 115200)
+# RPL.RoboPiInit(device = "/dev/ttyAMA0", bps = 115200)
+RPL.init()
 
 speed = 500
 
