@@ -2,7 +2,7 @@ import RoboPiLib as RPL
 import time
 import curses
 import math
-RPL.RoboPiInit(device = "/dev/ttyAMA0", bps = 115200)
+import setup
 
 screen = curses.initscr()
 curses.halfdelay(5)
