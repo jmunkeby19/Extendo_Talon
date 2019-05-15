@@ -1,5 +1,5 @@
 import RoboPiLib as RPL
-import time as time
+import time
 import math
 RPL.RoboPiInit(device = "/dev/ttyAMA0", bps = 115200)
 
