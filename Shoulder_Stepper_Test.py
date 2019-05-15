@@ -84,7 +84,7 @@ while key != ord('q'):
 if key == ord('q'):
     curses.endwin()
 if key == ord('a'):
-    shoulder(False,1,100)
+    shoulder()
 
 #ui control for ar control. a = shoulder back. s = shoulder forward. d = elbow backward. f = elbow forward
 #def ui():
