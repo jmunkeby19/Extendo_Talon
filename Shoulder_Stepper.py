@@ -1,7 +1,7 @@
 import Voss_RoboPiLib as RPL
 import time as time
 import math
-import setup
+RPL.RoboPiInit(device = "/dev/ttyAMA0", bps = 115200)
 
 shoulder_pul = 6
 shoulder_dir = 7
