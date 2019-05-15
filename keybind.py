@@ -1,7 +1,8 @@
 import Voss_RoboPiLib as RPL
 import time
 import curses
-RPL.RoboPiInit(device = "/dev/ttyAMA0", bps = 115200)
+import setup
+#RPL.RoboPiInit(device = "/dev/ttyAMA0", bps = 115200)
 
 screen = curses.initscr()
 curses.halfdelay(5)
