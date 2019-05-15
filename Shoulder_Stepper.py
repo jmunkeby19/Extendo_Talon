@@ -3,10 +3,10 @@ import time
 import math
 RPL.RoboPiInit(device = "/dev/ttyAMA0", bps = 115200)
 
-#shoulder_pul = 6
-#shoulder_dir = 7
-#elbow_pul = 1
-#elbow_dir = 2
+shoulder_pul = 6
+shoulder_dir = 7
+elbow_pul = 1
+elbow_dir = 2
 
 print shoulder_pul, " shoulder_pul"
 print shoulder_dir, " shoulder_dir"
