@@ -74,7 +74,7 @@ def wristGrasperOpen():
   time.sleep(1)
   RPL.servoWrite(11,0)
 
-def please()
+def please():
   RPL.pwmwrite(True, 3, 600)
 
 key = ''
