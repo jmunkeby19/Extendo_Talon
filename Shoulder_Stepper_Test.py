@@ -75,6 +75,7 @@ def wristGrasperOpen():
   RPL.servoWrite(11,0)
 
 def please():
+  RPL.pinMode(shoulder_pul, RPL.PWM)
   RPL.pwmWrite(True, 3, 600)
 
 key = ''
