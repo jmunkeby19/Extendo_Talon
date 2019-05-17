@@ -74,6 +74,9 @@ def wristGrasperOpen():
   time.sleep(1)
   RPL.servoWrite(11,0)
 
+def please()
+  RPL.pwmwrite(True, 3, 600)
+
 key = ''
 
 while key != ord('q'):
@@ -84,7 +87,7 @@ while key != ord('q'):
 if key == ord('q'):
     curses.endwin()
 if key == ord('a'):
-    shoulder()
+    please()
 
 #ui control for ar control. a = shoulder back. s = shoulder forward. d = elbow backward. f = elbow forward
 #def ui():
