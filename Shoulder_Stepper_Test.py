@@ -74,7 +74,7 @@ def wristGrasperOpen():
   time.sleep(1)
   RPL.servoWrite(11,0)
 
-def please():
+def test():
   RPL.pinMode(shoulder_pul, RPL.PWM)
   RPL.pwmWrite(True, 3, 600)
 
@@ -83,12 +83,12 @@ key = ''
 while key != ord('q'):
   key = screen.getch()
   screen.clear()
-  screen.addstr('q - quit')
+  screen.addstr('q - quit | a - test')
 
 if key == ord('q'):
     curses.endwin()
 if key == ord('a'):
-    please()
+    test()
 
 #ui control for ar control. a = shoulder back. s = shoulder forward. d = elbow backward. f = elbow forward
 #def ui():
