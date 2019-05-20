@@ -50,7 +50,40 @@ def clock_5():
   time.sleep(t7)
   RPL.servoWrite(1,0)
 
+def cclock_360():
+  RPL.servoWrite(1,2000)
+  time.sleep(t1)
+  RPL.servoWrite(1,0)
 
+def cclock_180():
+  RPL.servoWrite(1,2000)
+  time.sleep(t2)
+  RPL.servoWrite(1,0)
+
+def cclock_90():
+  RPL.servoWrite(1,2000)
+  time.sleep(t3)
+  RPL.servoWrite(1,0)
+
+def cclock_45():
+  RPL.servoWrite(1,2000)
+  time.sleep(t4)
+  RPL.servoWrite(1,0)
+
+def cclock_15():
+  RPL.servoWrite(1,2000)
+  time.sleep(t5)
+  RPL.servoWrite(1,0)
+
+def cclock_10():
+  RPL.servoWrite(1,2000)
+  time.sleep(t6)
+  RPL.servoWrite(1,0)
+
+def cclock_5():
+  RPL.servoWrite(1,2000)
+  time.sleep(t7)
+  RPL.servoWrite(1,0)
 
 key = ''
 
