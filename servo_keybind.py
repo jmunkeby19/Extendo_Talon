@@ -3,6 +3,10 @@ import time
 import curses
 import setup
 
+screen = curses.initscr()
+curses.halfdelay(5)
+curses.noecho()
+
 t1 = 0.5
 t2 = 1
 t3 = 2
