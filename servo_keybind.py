@@ -8,7 +8,7 @@ t2 = 1
 t3 = 2
 t4 = 4
 
-def 360():
+def rotation():
   RPL.servoWrite(1,2000)
   time.sleep(t4)
   RPL.servoWrite(1,0)
@@ -22,4 +22,4 @@ while key != ord('q'):
   if key == ord('q'):
     curses.endwin()
   if key == ord('a'):
-    360()
+    rotation()
