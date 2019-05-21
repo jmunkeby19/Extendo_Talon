@@ -90,7 +90,8 @@ key = ''
 while key != ord('q'):
   key = screen.getch()
   screen.clear()
-  screen.addstr('q - quit | a - 360 degrees')
+  screen.addstr('q - quit | a - 360 | s - 180 | d - 90 | f - 45 | g - 15 | h - 10 | j - 5')
+  screen.addstr('q - quit | z - 360 | x - 180 | c - 90 | v - 45 | b - 15 | n - 10 | m - 5')
   if key == ord('q'):
     curses.endwin()
   if key == ord('a'):
